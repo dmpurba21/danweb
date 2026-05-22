@@ -10,19 +10,19 @@ export const serviceData = [
     icon: <RxArrowTopRight />,
     title: "Software License Advisory",
     description:
-      "more than 12 years performing Software license audits across ASEAN. I help you navigate audit notifications, set up Software License Management processes, and optimize licensing costs — before the penalties arrive.",
+      "more than 12 years performing Software license audits across ASEAN. I help you navigate audit notifications, set up Software License Management processes, and optimize licensing costs, before the penalties arrive.",
   },
   {
     icon: <RxArrowTopRight />,
     title: "Vendor Risk Management",
     description:
-      "5 years in Third-Party Risk Management at Deloitte. I help you assess vendor risk, build TPRM frameworks, design risk questionnaires, and run assessments — whether you're short-staffed or starting from scratch.",
+      "5 years in Third-Party Risk Management at Deloitte. I help you assess vendor risk, build TPRM frameworks, design risk questionnaires, and run assessments, whether you're short-staffed or starting from scratch.",
   },
   {
     icon: <RxArrowTopRight />,
-    title: "Data Analytics for Compliance",
+    title: "Data Analytics for Business Insight",
     description:
-      "Using data mining techniques to identify non-compliance signals before auditors do. I analyze support logs, sales transactions, and software usage patterns to surface risk and prioritize your compliance activities.",
+      "Using data mining techniques to identify non-compliance signals before auditors do. I analyze support logs, sales transactions, and software usage patterns to surface risk and prioritize your business objective.",
   },
 ];
 
