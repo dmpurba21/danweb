@@ -14,8 +14,8 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          path: "/thumb5.png",
+          --link: "http://example.com",
         },
         {
           title: "title",
