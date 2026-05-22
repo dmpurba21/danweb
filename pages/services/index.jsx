@@ -3,28 +3,6 @@ import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 import ServiceSlider from "../../components/ServiceSlider";
 import { fadeIn } from "../../variants";
-import { RxArrowTopRight } from "react-icons/rx";
-
-export const serviceData = [
-  {
-    icon: <RxArrowTopRight />,
-    title: "Software License Advisory",
-    description:
-      "more than 12 years performing Software license audits across ASEAN. I help you navigate audit notifications, set up Software License Management processes, and optimize licensing costs, before the penalties arrive.",
-  },
-  {
-    icon: <RxArrowTopRight />,
-    title: "Vendor Risk Management",
-    description:
-      "5 years in Third-Party Risk Management at Deloitte. I help you assess vendor risk, build TPRM frameworks, design risk questionnaires, and run assessments, whether you're short-staffed or starting from scratch.",
-  },
-  {
-    icon: <RxArrowTopRight />,
-    title: "Data Analytics for Business Insight",
-    description:
-      "Transforming raw data into actionable business insights. I help organizations analyze key data points, uncover hidden opportunities, and make informed decisions that drive growth and meet strategic objectives.",
-  },
-];
 
 const Services = () => {
   return (
@@ -50,12 +28,12 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              12+ years across ASEAN and APAC helping organizations navigate
-              software licensing risk, vendor exposure, and compliance
-              complexity — turning technical challenges into commercial outcomes.
+              12+ years applying data analytics to solve complex business
+              challenges across ASEAN and APAC. From software license exposure
+              to vendor risk and business insight, turning data into decisions
+              that move organizations forward.
             </motion.p>
           </div>
-
           {/* slider */}
           <motion.div
             variants={fadeIn("down", 0.6)}
