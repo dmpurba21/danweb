@@ -14,19 +14,19 @@ const serviceData = [
     Icon: MdOutlinePolicy,
     title: "Software License Advisory",
     description:
-      "11 years performing IBM and Microsoft license audits across ASEAN. Navigate audit notifications, set up Software License Management, and optimize costs — before the penalties arrive.",
+      "11 years of IBM & Microsoft audit experience across ASEAN. I help you navigate audit notifications, optimize license costs, and build a defensible SAM process.",
   },
   {
     Icon: BsShieldCheck,
     title: "Vendor Risk Management",
     description:
-      "5 years in Third-Party Risk Management at Deloitte. Build TPRM frameworks, design vendor risk questionnaires, and run assessments — whether you're starting from scratch or short-staffed.",
+      "5 years in TPRM at Deloitte. I help design risk frameworks, vendor questionnaires, and run end-to-end third-party assessments — from setup to execution.",
   },
   {
     Icon: MdOutlineAnalytics,
     title: "Data Analytics for Compliance",
     description:
-      "Using data mining techniques to surface non-compliance signals before auditors do — analyzing support logs, sales transactions, and usage patterns to prioritize your compliance activities.",
+      "Data mining techniques to surface non-compliance before auditors do — turning support logs, usage patterns, and sales signals into actionable compliance insights.",
   },
 ];
 
