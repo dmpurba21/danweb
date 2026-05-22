@@ -9,20 +9,20 @@ const workSlides = {
     {
       images: [
         {
-          title: "Vendor Cyber Risk Assessment",
-          path: "/thumb2.jpg",
-        },
-        {
-          title: "Financial Standing Analysis",
-          path: "/thumb3.jpg",
-        },
-        {
-          title: "Software License Audit",
+          title: "Software Licensing",
           path: "/thumb1.jpg",
         },
         {
-          title: "Compliance Dashboard",
-          path: "/thumb5.png",
+          title: "Vendor Risk Assessment",
+          path: "/thumb2.jpg",
+        },
+        {
+          title: "Data Mining Algorithm",
+          path: "/thumb3.jpg",
+        },
+        {
+          title: "Third Party Risk Management",
+          path: "/thumb4.png",
         },
       ],
     },
