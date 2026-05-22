@@ -29,9 +29,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            12+ years helping organizations across ASEAN and APAC uncover
-            hidden opportunities, manage risk, and make informed decisions
-            — transforming complex data into clear, actionable business outcomes.
+            12+ years applying data analytics to solve complex business
+            challenges across ASEAN and APAC. From uncovering software
+            license exposure to identifying vendor risk and surfacing
+            opportunities hidden in your data.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
