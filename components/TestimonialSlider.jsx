@@ -8,24 +8,24 @@ import "swiper/css/pagination";
 const testimonialData = [
   {
     message:
+      "I had the pleasure of hiring Daniel to promote my product, and I could not be more pleased with the results. His speed, punctuality, and the amazing outcome of the campaign he ran in less than 8 hours truly exceeded my expectations. Thanks to Daniel's efforts, I gained three valuable leads in just one day. I highly recommend him for anyone looking for a dedicated and effective freelancer to elevate their product promotion strategies.",
+    name: "Kemadhipie K.",
+    position: "Head of Sales Marketing, TransGraph Consulting Pvt Ltd",
+    date: "Jan 2024",
+  },
+  {
+    message:
       "I worked with Daniel during my time at IBM when he was the assigned Deloitte partner to my client base in ASEAN. I experienced Daniel as a highly professional and very organised individual. With his attention to detail he used to be an invaluable asset to our operations. Daniel's spectrum of knowledge and interests went far beyond what was required for his day to day activities and that further deepened our relationship and the interactions with our clients. Working with Daniel constitutes a value in itself, independent of the outcome.",
-    name: "Roman Laal R.",
-    position: "Service Account Executive, Software License Compliance",
+    name: "Roman Laal Riahi",
+    position: "ASEAN Enterprise Software License Manager, IBM",
     date: "Jan 2024",
   },
   {
     message:
       "I worked with Daniel at IBM. We were engaged for a compliance deal, totally complex and challenging, but with Daniel's leadership we closed it smoothly. His reputation, flexibility, strong communication with the customer, and responsiveness helped us reach a win-win solution. Highly recommend.",
     name: "Caroline P.",
-    position: "Director",
-    date: "",
-  },
-  {
-    message:
-      "I had the pleasure of hiring Daniel to promote my product, and I could not be more pleased with the results. His speed, punctuality, and the amazing outcome of the campaign he ran in less than 8 hours truly exceeded my expectations. Thanks to Daniel's efforts, I gained three valuable leads in just one day. I highly recommend him for anyone looking for a dedicated and effective freelancer to elevate their product promotion strategies.",
-    name: "Kemadhipie K.",
-    position: "Head of Sales Marketing, Indonesia",
-    date: "",
+    position: "Enteprise Software Sales, IBM",
+    date: "Jan 2024",
   },
 ];
 
