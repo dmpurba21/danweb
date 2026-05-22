@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
-
 import { fadeIn } from "../../variants";
 import { useState } from "react";
 
@@ -10,10 +9,8 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsLoading(true);
-
     const myForm = event.target;
     const formData = new FormData(myForm);
-
     fetch("/__forms.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -33,18 +30,31 @@ const Contact = () => {
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
-        {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
-          {/* text */}
+
+          {/* heading */}
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="h2 text-center mb-4"
           >
             Let's <span className="text-accent">connect.</span>
           </motion.h2>
+
+          {/* subtitle */}
+          <motion.p
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="text-white/60 text-center mb-12 max-w-[500px] mx-auto"
+          >
+            Whether you're navigating a publisher audit, building a SAM
+            practice, or exploring advisory services across APAC — I'd be
+            glad to connect. I'll get back to you within 24–48 hours.
+          </motion.p>
 
           {/* form */}
           <motion.form
@@ -58,10 +68,8 @@ const Contact = () => {
             autoCapitalize="off"
             name="contact"
           >
-            {/* input group */}
             <div className="flex gap-x-6 w-full">
               <input type="hidden" name="form-name" value="contact" />
-
               <input
                 type="text"
                 name="name"
@@ -111,7 +119,6 @@ const Contact = () => {
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let's talk
               </span>
-
               <BsArrowRight
                 className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
                 aria-hidden
