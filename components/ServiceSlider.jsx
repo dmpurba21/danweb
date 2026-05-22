@@ -14,19 +14,19 @@ const serviceData = [
     Icon: MdOutlinePolicy,
     title: "Software License Advisory",
     description:
-      "12+ years performing software license audits across ASEAN. Applying data analytics to navigate audit notifications, set up Software License Management, and optimize licensing costs before the penalties arrive.",
+      "12+ years of audit experience across ASEAN. I help you navigate license risk, optimize costs, and build a defensible compliance position.",
   },
   {
     Icon: BsShieldCheck,
     title: "Vendor Risk Management",
     description:
-      "5 years in Third-Party Risk Management at Deloitte. Using data driven assessments to evaluate vendor risk, build TPRM frameworks, and design risk questionnaires whether you are short-staffed or starting from scratch.",
+      "Data driven vendor assessments built on 5 years of TPRM experience at Deloitte. From framework design to full program execution.",
   },
   {
     Icon: MdOutlineAnalytics,
     title: "Data Analytics for Business Insight",
     description:
-      "Transforming raw data into actionable business insights. Analyzing key data points to uncover hidden opportunities, manage risk exposure, and support informed decisions that drive growth and meet strategic objectives.",
+      "Turning complex data into clear business decisions. I help organizations uncover opportunities and manage risk through structured data analysis.",
   },
 ];
 
