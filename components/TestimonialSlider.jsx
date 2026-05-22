@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 import { FaQuoteLeft } from "react-icons/fa";
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 const testimonialData = [
@@ -15,14 +15,14 @@ const testimonialData = [
   },
   {
     message:
-      "I worked with Daniel at IBM. We were engaged for a compliance deal — totally complex and challenging — but with Daniel's leadership we closed it smoothly. His reputation, flexibility, strong communication with the customer, and responsiveness helped us reach a win-win solution. Highly recommend.",
+      "I worked with Daniel at IBM. We were engaged for a compliance deal, totally complex and challenging, but with Daniel's leadership we closed it smoothly. His reputation, flexibility, strong communication with the customer, and responsiveness helped us reach a win-win solution. Highly recommend.",
     name: "Caroline P.",
     position: "Director",
     date: "",
   },
   {
     message:
-      "I had the pleasure of hiring Daniel to promote my product, and I couldn't be more pleased with the results. His speed, punctuality, and the amazing outcome of the campaign he ran in less than 8 hours truly exceeded my expectations. Thanks to Daniel's efforts, I gained three valuable leads in just one day. I highly recommend him for anyone looking for a dedicated and effective freelancer to elevate their product promotion strategies.",
+      "I had the pleasure of hiring Daniel to promote my product, and I could not be more pleased with the results. His speed, punctuality, and the amazing outcome of the campaign he ran in less than 8 hours truly exceeded my expectations. Thanks to Daniel's efforts, I gained three valuable leads in just one day. I highly recommend him for anyone looking for a dedicated and effective freelancer to elevate their product promotion strategies.",
     name: "Kemadhipie K.",
     position: "Head of Sales Marketing, Indonesia",
     date: "",
@@ -32,28 +32,37 @@ const testimonialData = [
 const TestimonialSlider = () => {
   return (
     <Swiper
-      navigation={true}
-      pagination={{ clickable: true }}
-      modules={[Navigation, Pagination]}
-      className="h-[340px] xl:h-[280px]"
+      breakpoints={{
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[FreeMode, Pagination]}
+      freeMode
+      className="h-[350px]"
     >
       {testimonialData.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 max-w-[900px] mx-auto">
-            {/* quote & message */}
-            <div className="flex-1 flex flex-col justify-center">
-              <FaQuoteLeft className="text-4xl text-accent mb-4 mx-auto md:mx-0" />
-              <p className="text-white/60 leading-relaxed text-sm md:text-base text-center md:text-left">
-                {item.message}
-              </p>
-            </div>
+          <div className="bg-[rgba(65,47,123,0.15)] rounded-lg px-8 py-6 flex flex-col gap-y-4 h-full cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
+            {/* quote icon */}
+            <FaQuoteLeft className="text-3xl text-accent" />
+            {/* message */}
+            <p className="text-white/60 leading-relaxed text-sm flex-1">
+              {item.message}
+            </p>
             {/* name & position */}
-            <div className="flex flex-col items-center md:items-start w-full md:w-[240px] flex-shrink-0 mt-6 md:mt-0">
-              <div className="w-12 h-[2px] bg-accent mb-4" />
-              <div className="text-lg font-semibold text-white">
-                {item.name}
-              </div>
-              <div className="text-sm text-accent">{item.position}</div>
+            <div>
+              <div className="w-8 h-[1px] bg-accent mb-3" />
+              <div className="text-sm font-semibold text-white">{item.name}</div>
+              <div className="text-xs text-accent">{item.position}</div>
               {item.date && (
                 <div className="text-xs text-white/40 mt-1">{item.date}</div>
               )}
