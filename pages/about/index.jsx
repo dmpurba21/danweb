@@ -10,9 +10,8 @@ export const aboutData = [
   {
     title: "skills",
     info: [
-      { title: "Software Asset Management (SAM)" },
-      { title: "IT Asset Management (ITAM)" },
-      { title: "License Compliance & Audit Defense" },
+      { title: "Software License Advisory" },
+      { title: "Vendor Risk Assessment" },
       { title: "Third-Party Risk Management (TPRM)" },
       { title: "Data Analytics & Automation" },
     ],
