@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
-import { fadeIn } from "../../variants";
+import { fadeIn } from "../variants";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
