@@ -38,19 +38,19 @@ export const aboutData = [
     info: [
       {
         title: "Manager — Connor (APAC)",
-        stage: "2025 - Present",
+        stage: "2025 - Present · Managing 30-40+ compliance engagements annually across APAC for software publishers and enterprise customers",
       },
       {
         title: "Senior Manager, Risk Advisory — Deloitte",
-        stage: "2021 - 2024",
+        stage: "2021 - 2024 · Built Malaysia's first TPRM managed services team to 40% profit margin. FY23 Trailblazer Award.",
       },
       {
         title: "Manager, Risk Advisory — Deloitte",
-        stage: "2016 - 2021",
+        stage: "2016 - 2021 · Led ASEAN ITAM service line. Regional IBM licensing SME. Improved operational efficiency by 36% via SQL analytics.",
       },
       {
         title: "Consultant → Sr. Consultant — Deloitte",
-        stage: "2013 - 2015",
+        stage: "2013 - 2015 · Led IBM and Microsoft audits in Indonesia. Built automation tool driving 60% efficiency gain and 100% revenue growth. FY13 Rookie of the Year.",
       },
     ],
   },
