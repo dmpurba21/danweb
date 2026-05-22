@@ -22,7 +22,7 @@ export const serviceData = [
     icon: <RxArrowTopRight />,
     title: "Data Analytics for Business Insight",
     description:
-      "Using data mining techniques to identify non-compliance signals before auditors do. I analyze support logs, sales transactions, and software usage patterns to surface risk and prioritize your business objective.",
+      "Transforming raw data into actionable business insights. I help organizations analyze key data points, uncover hidden opportunities, and make informed decisions that drive growth and meet strategic objectives.",
   },
 ];
 
