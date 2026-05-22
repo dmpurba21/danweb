@@ -60,7 +60,7 @@ export const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "MBA, International Business — TH Nürnberg, Germany",
+        title: "MBA, International Business — Georg-Simon Ohm Management Institue, Nürnberg, Germany",
         stage: "2012",
       },
       {
