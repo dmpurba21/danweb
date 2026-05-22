@@ -1,86 +1,62 @@
-import Image from "next/image";
-import { FaQuoteLeft } from "react-icons/fa";
-import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Navigation, Pagination } from "swiper";
+import { FaQuoteLeft } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "I worked with Daniel during my time at IBM when he was the assigned Deloitte partner to my client base in ASEAN. I experienced Daniel as a highly professional and very organised individual. With his attention to detail he used to be an invaluable asset to our operations. Daniel's spectrum of knowledge and interests went far beyond what was required for his day to day activities and that further deepened our relationship and the interactions with our clients. Working with Daniel constitutes a value in itself, independent of the outcome.",
+    name: "Roman Laal R.",
+    position: "Service Account Executive, Software License Compliance",
+    date: "Jan 2024",
   },
   {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "I worked with Daniel at IBM. We were engaged for a compliance deal — totally complex and challenging — but with Daniel's leadership we closed it smoothly. His reputation, flexibility, strong communication with the customer, and responsiveness helped us reach a win-win solution. Highly recommend.",
+    name: "Caroline P.",
+    position: "Director",
+    date: "",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "I had the pleasure of hiring Daniel to promote my product, and I couldn't be more pleased with the results. His speed, punctuality, and the amazing outcome of the campaign he ran in less than 8 hours truly exceeded my expectations. Thanks to Daniel's efforts, I gained three valuable leads in just one day. I highly recommend him for anyone looking for a dedicated and effective freelancer to elevate their product promotion strategies.",
+    name: "Kemadhipie K.",
+    position: "Head of Sales Marketing, Indonesia",
+    date: "",
   },
 ];
 
 const TestimonialSlider = () => {
   return (
     <Swiper
-      navigation
-      pagination={{
-        clickable: true,
-      }}
+      navigation={true}
+      pagination={{ clickable: true }}
       modules={[Navigation, Pagination]}
-      className="h-[400px]"
+      className="h-[340px] xl:h-[280px]"
     >
-      {testimonialData.map((person, i) => (
-        <SwiperSlide key={i}>
-          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
-            {/* avatar, name, position */}
-            <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
-              <div className="flex flex-col justify-center text-center">
-                {/* avatar */}
-                <div className="mb-2 mx-auto">
-                  <Image
-                    src={person.image}
-                    width={100}
-                    height={100}
-                    alt={person.name}
-                  />
-                </div>
-
-                {/* name */}
-                <div className="text-lg">{person.name}</div>
-
-                {/* position */}
-                <div className="text-[12px] uppercase font-extralight tracking-widest">
-                  {person.position}
-                </div>
-              </div>
-            </div>
-
+      {testimonialData.map((item, index) => (
+        <SwiperSlide key={index}>
+          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 max-w-[900px] mx-auto">
             {/* quote & message */}
-            <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
-              {/* quote icon */}
-              <div className="mb-4">
-                <FaQuoteLeft
-                  className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0"
-                  aria-aria-hidden
-                />
+            <div className="flex-1 flex flex-col justify-center">
+              <FaQuoteLeft className="text-4xl text-accent mb-4 mx-auto md:mx-0" />
+              <p className="text-white/60 leading-relaxed text-sm md:text-base text-center md:text-left">
+                {item.message}
+              </p>
+            </div>
+            {/* name & position */}
+            <div className="flex flex-col items-center md:items-start w-full md:w-[240px] flex-shrink-0 mt-6 md:mt-0">
+              <div className="w-12 h-[2px] bg-accent mb-4" />
+              <div className="text-lg font-semibold text-white">
+                {item.name}
               </div>
-
-              {/* message */}
-              <div className="xl:text-lg text-center md:text-left">
-                {person.message}
-              </div>
+              <div className="text-sm text-accent">{item.position}</div>
+              {item.date && (
+                <div className="text-xs text-white/40 mt-1">{item.date}</div>
+              )}
             </div>
           </div>
         </SwiperSlide>
