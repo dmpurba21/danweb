@@ -10,7 +10,7 @@ export const serviceData = [
     icon: <RxArrowTopRight />,
     title: "Software License Advisory",
     description:
-      "11 years performing IBM and Microsoft license audits across ASEAN. I help you navigate audit notifications, set up Software License Management processes, and optimize licensing costs — before the penalties arrive.",
+      "more than 12 years performing Software license audits across ASEAN. I help you navigate audit notifications, set up Software License Management processes, and optimize licensing costs — before the penalties arrive.",
   },
   {
     icon: <RxArrowTopRight />,
