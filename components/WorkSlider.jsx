@@ -15,7 +15,6 @@ const workSlides = {
         {
           title: "title",
           path: "/thumb5.png",
-          --link: "http://example.com",
         },
         {
           title: "title",
