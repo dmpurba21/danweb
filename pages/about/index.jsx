@@ -57,7 +57,7 @@ export const aboutData = [
     ],
   },
   {
-    title: "credentials",
+    title: "education",
     info: [
       {
         title: "MBA, International Business — Georg-Simon Ohm Management Institue, Nürnberg, Germany",
