@@ -18,7 +18,7 @@ const workSlides = {
         },
         {
           title: "Software License Audit",
-          path: "/thumb4.jpg",
+          path: "/thumb1.jpg",
         },
         {
           title: "Compliance Dashboard",
