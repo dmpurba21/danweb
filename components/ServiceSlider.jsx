@@ -3,7 +3,7 @@ import {
 } from "react-icons/rx";
 import { MdOutlinePolicy, MdOutlineAnalytics } from "react-icons/md";
 import { BsShieldCheck } from "react-icons/bs";
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
