@@ -186,18 +186,19 @@ const About = () => {
             ))}
           </div>
 
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemI) => (
-              <div
-                key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
-              >
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                {item.stage && <div className="hidden md:flex">-</div>}
-                {item.stage && <div>{item.stage}</div>}
-              </div>
-            ))}
-          </div>
+          <div className="py-2 xl:py-6 flex flex-col gap-y-3 xl:gap-y-5 items-center xl:items-start w-full">
+          {aboutData[index].info.map((item, itemI) => (
+            <div
+              key={itemI}
+              className="flex flex-col gap-y-1 text-center xl:text-left text-white/60 border-b border-white/10 pb-3 w-full"
+            >
+              <div className="font-semibold text-white text-sm">{item.title}</div>
+              {item.stage && (
+                <div className="text-xs text-white/40 leading-relaxed">{item.stage}</div>
+              )}
+            </div>
+          ))}
+        </div>
         </motion.div>
       </div>
     </div>
