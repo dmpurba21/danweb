@@ -22,7 +22,7 @@ const workSlides = {
         },
         {
           title: "Third Party Risk Management",
-          path: "/thumb4.png",
+          path: "/thumb4.jpg",
         },
       ],
     },
