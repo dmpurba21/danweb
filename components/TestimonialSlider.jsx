@@ -24,7 +24,7 @@ const testimonialData = [
     message:
       "I worked with Daniel at IBM. We were engaged for a compliance deal, totally complex and challenging, but with Daniel's leadership we closed it smoothly. His reputation, flexibility, strong communication with the customer, and responsiveness helped us reach a win-win solution. Highly recommend.",
     name: "Caroline P.",
-    position: "Enteprise Software Sales, IBM",
+    position: "Enterprise Software Sales, IBM",
     date: "Jan 2024",
   },
 ];
@@ -47,7 +47,7 @@ const TestimonialSlider = () => {
       }}
       modules={[FreeMode, Pagination]}
       freeMode
-      className="h-[350px]"
+      className="h-[420px]"
     >
       {testimonialData.map((item, index) => (
         <SwiperSlide key={index}>
@@ -55,7 +55,7 @@ const TestimonialSlider = () => {
             {/* quote icon */}
             <FaQuoteLeft className="text-3xl text-accent" />
             {/* message */}
-            <p className="text-white/60 leading-relaxed text-sm flex-1">
+            <p className="text-white/60 leading-relaxed text-sm overflow-y-auto flex-1">
               {item.message}
             </p>
             {/* name & position */}
