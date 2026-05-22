@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 import WorkSlider from "../../components/WorkSlider";
@@ -29,11 +28,12 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              A selection of engagements and projects across software license
+              advisory, vendor risk management, and data analytics. Each
+              representing a real business challenge turned into a measurable
+              outcome.
             </motion.p>
           </div>
-
           {/* slider */}
           <motion.div
             variants={fadeIn("down", 0.6)}
