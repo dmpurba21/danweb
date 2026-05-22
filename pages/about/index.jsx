@@ -54,16 +54,16 @@ export const aboutData = [
       },
     ],
   },
-  {
+    {
     title: "education",
     info: [
       {
-        title: "MBA, International Business — Georg-Simon Ohm Management Institue, Nürnberg, Germany",
-        stage: "2012",
+        title: "MBA, International Business",
+        stage: "TH Nürnberg, Germany — 2012",
       },
       {
-        title: "BSc, Information Technology — BINUS University, Jakarta",
-        stage: "2008",
+        title: "BSc, Information Technology",
+        stage: "BINUS University, Jakarta — 2008",
       },
     ],
   },
