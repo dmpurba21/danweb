@@ -14,7 +14,7 @@ export const aboutData = [
       { title: "IT Asset Management (ITAM)" },
       { title: "License Compliance & Audit Defense" },
       { title: "Third-Party Risk Management (TPRM)" },
-      { title: "SQL-Based Analytics & Automation" },
+      { title: "Data Analytics & Automation" },
     ],
   },
   {
