@@ -50,7 +50,7 @@ export const aboutData = [
       },
       {
         title: "Consultant → Sr. Consultant — Deloitte",
-        stage: "2013 - 2015 · Started career performing IBM and Microsoft software license audits — where data mining and analytics were the core tools for identifying non-compliance and quantifying risk. FY13 Rookie of the Year.",
+        stage: "2013 - 2015 · Started career performing IBM and Microsoft software license audits where data mining and analytics were the core tools for identifying non-compliance and quantifying risk. FY13 Rookie of the Year.",
       },
     ],
   },
@@ -108,5 +108,5 @@ const About = () => {
             Over 12 years across ASEAN and APAC, I have applied data analytics
             to solve complex business challenges. From uncovering software
             license exposure to assessing vendor risk and surfacing hidden
-            opportunities — my work sits at the intersection of data, risk, and
+            opportunities, my work sits at the intersection of data, risk, and
             commercial outcomes. I bridge deep technical credibility with
