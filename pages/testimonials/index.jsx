@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import TestimonialSlider from "../../components/TestimonialSlider";
 import { fadeIn } from "../../variants";
 
@@ -16,7 +15,16 @@ const Testimonials = () => {
         >
           What clients <span className="text-accent">say.</span>
         </motion.h2>
-
+        <motion.p
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="text-white/60 mb-8 max-w-[500px] mx-auto"
+        >
+          Feedback from colleagues and clients I've had the privilege of
+          working with across ASEAN and APAC.
+        </motion.p>
         {/* slider */}
         <motion.div
           variants={fadeIn("up", 0.4)}
