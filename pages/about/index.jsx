@@ -21,15 +21,15 @@ export const aboutData = [
     info: [
       {
         title: "FY23 Trailblazer Award — Deloitte",
-        stage: "Feb 2023",
+        stage: "Feb 2023 · Awarded for introducing a new service offering to the ASEAN market",
       },
       {
-        title: "EERM Delegation — Global Summit, Las Vegas",
-        stage: "Jul 2016",
+        title: "ASEAN Delegation — EERM Global Summit, Las Vegas - Deloitte",
+        stage: "Jul 2016 · Selected as Southeast Asia delegate to Deloitte's Global EERM Summit",
       },
       {
         title: "FY13 ERS Rookie of the Year — Deloitte",
-        stage: "May 2013",
+        stage: "May 2013 · Recognised for outstanding contribution within the first year at Deloitte",
       },
     ],
   },
