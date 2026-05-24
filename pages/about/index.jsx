@@ -73,7 +73,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-32 pt-40 text-center xl:text-left">
       <Circles />
 
       <motion.div
@@ -81,7 +81,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[500px]"
+        className="hidden xl:flex absolute bottom-0 -left-[700px]"
       >
         <Avatar />
       </motion.div>
