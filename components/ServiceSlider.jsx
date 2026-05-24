@@ -14,19 +14,19 @@ const serviceData = [
     Icon: MdOutlinePolicy,
     title: "Software Licensing",
     description:
-      "12+ years performing software license audits across ASEAN, working with some of the largest software publishers in the industry. I know how publishers build their audit cases, and how to navigate the process to reach fair and defensible outcomes for your organization.",
+      "12+ years performing software license audits across ASEAN with some of the largest publishers in the industry. I know how publishers build their cases and how to reach fair, defensible outcomes for your organization.",
   },
   {
     Icon: BsShieldCheck,
     title: "Vendor Risk Management",
     description:
-      "Built and led Deloitte's first TPRM managed services team in Malaysia. I understand both sides of the assessment — what good vendor controls look like and what gaps genuinely matter to your business versus what is just noise.",
+      "Built and led Deloitte's first TPRM managed services team in Malaysia. I understand what good vendor controls look like and what gaps genuinely matter to your business versus what is just noise.",
   },
   {
     Icon: MdOutlineAnalytics,
     title: "Data Analytics for Business Insight",
     description:
-      "Data has been the core of my work since day one — from mining support logs to identify license exposure to building SQL-based tools that cut reporting time by 60%. I use data to find what others miss and turn it into decisions that hold up.",
+      "Data has been the core of my work since day one. From mining support logs to building SQL tools that cut reporting time by 60%, I use data to find what others miss and turn it into decisions that hold up.",
   },
 ];
 
@@ -60,7 +60,9 @@ const ServiceSlider = () => {
             {/* title & description */}
             <div className="mb-8">
               <div className="mb-2 text-lg">{item.title}</div>
-              <p className="max-w-[350px] leading-normal">{item.description}</p>
+              <p className="max-w-[350px] leading-normal text-sm">
+                {item.description}
+              </p>
             </div>
             {/* arrow */}
             <div className="text-3xl">
