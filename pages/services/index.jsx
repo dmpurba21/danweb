@@ -19,7 +19,7 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My services <span className="text-accent">.</span>
+              Domain of <span className="text-accent">Expertise.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -28,10 +28,9 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              12+ years applying data analytics to solve complex business
-              challenges across ASEAN and APAC. From software license exposure
-              to vendor risk and business insight, turning data into decisions
-              that move organizations forward.
+              Three interconnected domains where data, risk, and commercial
+              outcomes converge. Each built on over a decade of applied
+              experience across ASEAN and APAC.
             </motion.p>
           </div>
           {/* slider */}
