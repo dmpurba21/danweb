@@ -12,21 +12,21 @@ import "swiper/css/pagination";
 const serviceData = [
   {
     Icon: MdOutlinePolicy,
-    title: "Software License Advisory",
+    title: "Software Licensing",
     description:
-      "A domain built on 12+ years of IBM and Microsoft audit experience across ASEAN. Applying data analytics to identify license exposure, interpret complex entitlement data, and translate findings into defensible compliance positions.",
+      "12+ years performing software license audits across ASEAN, working with some of the largest software publishers in the industry. I know how publishers build their audit cases, and how to navigate the process to reach fair and defensible outcomes for your organization.",
   },
   {
     Icon: BsShieldCheck,
     title: "Vendor Risk Management",
     description:
-      "Structured data-driven frameworks to evaluate third-party risk across security, privacy, and financial dimensions. Grounded in 5 years of TPRM practice at Deloitte and deep familiarity with MAS guidelines and NIST 800-53 controls.",
+      "Built and led Deloitte's first TPRM managed services team in Malaysia. I understand both sides of the assessment — what good vendor controls look like and what gaps genuinely matter to your business versus what is just noise.",
   },
   {
     Icon: MdOutlineAnalytics,
     title: "Data Analytics for Business Insight",
     description:
-      "Using data mining and analytical techniques to surface patterns, quantify risk, and support informed decisions. Applied across compliance, vendor assessment, and business operations to turn raw data into clear strategic direction.",
+      "Data has been the core of my work since day one — from mining support logs to identify license exposure to building SQL-based tools that cut reporting time by 60%. I use data to find what others miss and turn it into decisions that hold up.",
   },
 ];
 
