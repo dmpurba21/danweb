@@ -1,81 +1,206 @@
-import {
-  RxArrowTopRight,
-} from "react-icons/rx";
-import { MdOutlinePolicy, MdOutlineAnalytics } from "react-icons/md";
-import { BsShieldCheck } from "react-icons/bs";
-import { FreeMode, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import CountUp from "react-countup";
 
-const serviceData = [
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
+import { fadeIn } from "../../variants";
+
+export const aboutData = [
   {
-    Icon: MdOutlinePolicy,
-    title: "Software Licensing",
-    description:
-      "12+ years performing software license audits across ASEAN with some of the largest publishers in the industry. I know how publishers build their cases and how to reach fair, defensible outcomes for your organization.",
+    title: "skills",
+    info: [
+      { title: "Software License Advisory" },
+      { title: "Vendor Risk Assessment" },
+      { title: "Third-Party Risk Management (TPRM)" },
+      { title: "Data Analytics & Automation" },
+    ],
   },
   {
-    Icon: BsShieldCheck,
-    title: "Vendor Risk Management",
-    description:
-      "Built and led Deloitte's first TPRM managed services team in Malaysia. I understand what good vendor controls look like and what gaps genuinely matter to your business versus what is just noise.",
+    title: "awards",
+    info: [
+      {
+        title: "FY23 Trailblazer Award — Deloitte",
+        stage: "Feb 2023 · Awarded for introducing a new service offering to the ASEAN market",
+      },
+      {
+        title: "EERM Delegation — Global Summit, Las Vegas",
+        stage: "Jul 2016 · Selected as Southeast Asia delegate to Deloitte's Global EERM Summit",
+      },
+      {
+        title: "FY13 ERS Rookie of the Year — Deloitte",
+        stage: "May 2013 · Recognised for outstanding contribution within the first year at Deloitte",
+      },
+    ],
   },
   {
-    Icon: MdOutlineAnalytics,
-    title: "Data Analytics for Business Insight",
-    description:
-      "Data has been the core of my work since day one. From mining support logs to building SQL tools that cut reporting time by 60%, I use data to find what others miss and turn it into decisions that hold up.",
+    title: "experience",
+    info: [
+      {
+        title: "Manager — Connor (APAC)",
+        stage: "2025 - Present · Applying data-driven compliance analytics across 30-40+ publisher engagements annually, translating complex licensing data into commercially actionable outcomes for APAC markets.",
+      },
+      {
+        title: "Senior Manager, Risk Advisory — Deloitte",
+        stage: "2021 - 2024 · Built and scaled Malaysia's first TPRM managed services practice, using structured data assessment frameworks to evaluate vendor risk at scale. 40% profit margin. FY23 Trailblazer Award.",
+      },
+      {
+        title: "Manager, Risk Advisory — Deloitte",
+        stage: "2016 - 2021 · Led ASEAN IT Asset Management service line, pioneering SQL-based analytics to identify license exposure and optimize software spend. Improved operational efficiency by 36%.",
+      },
+      {
+        title: "Consultant → Sr. Consultant — Deloitte",
+        stage: "2013 - 2015 · Started career performing IBM and Microsoft software license audits where data mining and analytics were the core tools for identifying non-compliance and quantifying risk. FY13 Rookie of the Year.",
+      },
+    ],
+  },
+  {
+    title: "education",
+    info: [
+      {
+        title: "MBA, International Business",
+        stage: "TH Nürnberg, Germany — 2012",
+      },
+      {
+        title: "BSc, Information Technology",
+        stage: "BINUS University, Jakarta — 2008",
+      },
+    ],
   },
 ];
 
-const ServiceSlider = () => {
+const About = () => {
+  const [index, setIndex] = useState(0);
+
   return (
-    <Swiper
-      breakpoints={{
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[FreeMode, Pagination]}
-      freeMode
-      className="h-[240px] sm:h-[340px]"
-    >
-      {serviceData.map((item, i) => (
-        <SwiperSlide key={i}>
-          <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
-            {/* icon */}
-            <div className="text-4xl text-accent mb-4">
-              <item.Icon aria-hidden />
+    <div className="h-full bg-primary/30 py-32 pt-40 text-center xl:text-left">
+      <Circles />
+
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="hidden xl:flex absolute bottom-0 -left-[700px]"
+      >
+        <Avatar />
+      </motion.div>
+
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+        {/* text */}
+        <div className="flex-1 flex flex-col justify-center">
+          <motion.h2
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2"
+          >
+            Turning data into{" "}
+            <span className="text-accent">decisions that matter.</span>
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          >
+            Over 12 years across ASEAN and APAC, I have applied data analytics
+            to solve complex business challenges. From uncovering software
+            license exposure to assessing vendor risk and surfacing hidden
+            opportunities, my work sits at the intersection of data, risk, and
+            commercial outcomes. I bridge deep technical credibility with
+            pragmatic, relationship-preserving results.
+          </motion.p>
+
+          {/* counters */}
+          <motion.div
+            variants={fadeIn("right", 0.6)}
+            initial="hidden"
+            animate="show"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+          >
+            <div className="flex flex-1 xl:gap-x-6">
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={12} duration={5} />+
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Years of experience.
+                </div>
+              </div>
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={40} duration={5} />+
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Engagements per year.
+                </div>
+              </div>
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={36} duration={5} />%
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Efficiency gain via analytics.
+                </div>
+              </div>
+              <div className="relative flex-1">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={3} duration={5} />
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Professional awards.
+                </div>
+              </div>
             </div>
-            {/* title & description */}
-            <div className="mb-8">
-              <div className="mb-2 text-lg">{item.title}</div>
-              <p className="max-w-[350px] leading-normal text-sm">
-                {item.description}
-              </p>
-            </div>
-            {/* arrow */}
-            <div className="text-3xl">
-              <RxArrowTopRight
-                className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"
-                aria-hidden
-              />
-            </div>
+          </motion.div>
+        </div>
+
+        {/* info tabs */}
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        >
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+            {aboutData.map((item, itemI) => (
+              <div
+                key={itemI}
+                className={`${
+                  index === itemI &&
+                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                onClick={() => setIndex(itemI)}
+              >
+                {item.title}
+              </div>
+            ))}
           </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+
+          <div className="py-2 xl:py-6 flex flex-col gap-y-3 xl:gap-y-5 items-center xl:items-start w-full overflow-y-auto">
+            {aboutData[index].info.map((item, itemI) => (
+              <div
+                key={itemI}
+                className="flex flex-col gap-y-1 text-center xl:text-left text-white/60 border-b border-white/10 pb-3 w-full"
+              >
+                <div className="font-semibold text-white text-sm">
+                  {item.title}
+                </div>
+                {item.stage && (
+                  <div className="text-xs text-white/40 leading-relaxed">
+                    {item.stage}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </div>
   );
 };
 
-export default ServiceSlider;
+export default About;
