@@ -66,18 +66,19 @@ const WorkSlider = () => {
           spaceBetween={15}
           pagination={{ clickable: true }}
           modules={[Pagination]}
-          className="h-[280px]"
+          className="h-auto pb-8"
         >
           {workSlides.slides[0].images.map((image, i) => (
             <SwiperSlide key={i}>
-              <div className="relative rounded-lg overflow-hidden w-full h-full bg-[rgba(65,47,123,0.15)]">
+              <div className="rounded-lg overflow-hidden bg-[rgba(65,47,123,0.15)]">
                 <Image
                   src={image.path}
                   alt={image.title}
-                  fill
-                  style={{ objectFit: "contain" }}
+                  width={700}
+                  height={500}
+                  style={{ width: "100%", height: "auto" }}
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-2">
+                <div className="bg-black/60 px-4 py-2">
                   <div className="text-xs tracking-[0.1em] text-white font-medium">
                     {image.title}
                   </div>
