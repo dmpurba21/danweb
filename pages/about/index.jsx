@@ -11,9 +11,9 @@ export const aboutData = [
     title: "skills",
     info: [
       { title: "Software License Advisory" },
-      { title: "Vendor Risk Assessment" },
-      { title: "Third-Party Risk Management (TPRM)" },
+      { title: "Third-Party Risk Management (TPRM) & Vendor Risk Assessment" },
       { title: "Data Analytics & Automation" },
+      { title: "AI Training & Coaching for Business Professionals" },
     ],
   },
   {
@@ -87,7 +87,6 @@ const About = () => {
       </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -107,13 +106,12 @@ const About = () => {
           >
             Over 12 years across ASEAN and APAC, I have applied data analytics
             to solve complex business challenges. From uncovering software
-            license exposure to assessing vendor risk and surfacing hidden
-            opportunities, my work sits at the intersection of data, risk, and
-            commercial outcomes. I bridge deep technical credibility with
-            pragmatic, relationship-preserving results.
+            license exposure to assessing vendor risk, surfacing hidden
+            opportunities, and helping professionals harness AI as a competitive
+            advantage. My work sits at the intersection of data, risk, and
+            commercial outcomes.
           </motion.p>
 
-          {/* counters */}
           <motion.div
             variants={fadeIn("right", 0.6)}
             initial="hidden"
@@ -157,7 +155,6 @@ const About = () => {
           </motion.div>
         </div>
 
-        {/* info tabs */}
         <motion.div
           variants={fadeIn("left", 0.4)}
           initial="hidden"

@@ -10,7 +10,6 @@ const Services = () => {
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
-          {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
               variants={fadeIn("up", 0.2)}
@@ -28,12 +27,11 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Three interconnected domains where data, risk, and commercial
+              Four interconnected domains where data, risk, and commercial
               outcomes converge. Each built on over a decade of applied
               experience across ASEAN and APAC.
             </motion.p>
           </div>
-          {/* slider */}
           <motion.div
             variants={fadeIn("down", 0.6)}
             initial="hidden"
