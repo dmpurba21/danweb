@@ -13,8 +13,8 @@ const workSlides = {
           path: "/thumb1.jpg",
         },
         {
-          title: "Vendor Risk Assessment",
-          path: "/thumb2.jpg",
+          title: "AI training for business professionals",
+          path: "/thumb5.jpg",
         },
         {
           title: "Data Mining Algorithm",
