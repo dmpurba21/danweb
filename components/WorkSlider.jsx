@@ -8,10 +8,10 @@ const workSlides = {
   slides: [
     {
       images: [
-        { title: "Software Risk Assessment Matrix", path: "/thumb4.jpg" },
+        { title: "Software Risk Assessment Matrix", path: "/thumb2.jpg" },
         { title: "AI Training for Business Professionals", path: "/thumb5.jpg" },
         { title: "Data Mining Algorithm", path: "/thumb3.jpg" },
-        { title: "Third-Party Risk Management", path: "/thumb2.jpg" },
+        { title: "Third-Party Risk Management", path: "/thumb4.jpg" },
       ],
     },
   ],
