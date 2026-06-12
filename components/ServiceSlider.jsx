@@ -9,6 +9,12 @@ import "swiper/css/pagination";
 
 const serviceData = [
   {
+    Icon: MdOutlineLightbulb,
+    title: "AI for Business Professionals",
+    description:
+      "Practical AI workshops and coaching for teams who want to work smarter. Grounded in real-world application across compliance, risk, and operations. Helping professionals understand AI and use it as a genuine competitive advantage.",
+  },
+  {
     Icon: MdOutlinePolicy,
     title: "Software Licensing",
     description:
@@ -25,12 +31,6 @@ const serviceData = [
     title: "Data Analytics for Business Insight",
     description:
       "Data has been the core of my work since day one. From mining support logs to building SQL tools that cut reporting time by 60%, I use data to find what others miss and turn it into decisions that hold up.",
-  },
-  {
-    Icon: MdOutlineLightbulb,
-    title: "AI for Business Professionals",
-    description:
-      "Practical AI workshops and coaching for teams who want to work smarter. Grounded in real-world application across compliance, risk, and operations. Helping professionals understand AI and use it as a genuine competitive advantage.",
   },
 ];
 
