@@ -12,7 +12,7 @@ const serviceData = [
     Icon: MdOutlineLightbulb,
     title: "AI for Business Professionals",
     description:
-      "Practical AI workshops and coaching for teams who want to work smarter. Grounded in real-world application across compliance, risk, and operations. Helping professionals understand AI and use it as a genuine competitive advantage.",
+      "Practical AI workshops and one-on-one coaching to help professionals work smarter and turn AI into a genuine competitive advantage.",
   },
   {
     Icon: MdOutlinePolicy,
